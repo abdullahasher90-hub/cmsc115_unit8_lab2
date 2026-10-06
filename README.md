@@ -25,16 +25,16 @@ Commit message:
 ## Iteration 2
 
 What changed:
--
+- With the clearer prompt ("returns the largest integer in an array"), the AI replaced the sum with a max search. It sets max to values[0], then loops through the rest of the array and updates max whenever it finds a bigger value.
 
 What improved:
--
+- The Basic Array test (10/10) and the Negative test (5/5) now pass. Starting from values[0] instead of 0 means arrays with only negative numbers return the correct largest value. The score went from 0 to 15 out of 45.
 
 What still failed and why:
--
+- The Empty test failed, and one test in Single Value (testEmptyArray) failed with ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0. The code reads values[0] without checking if the array is empty, so it crashes when the array has no elements.
 
 Commit message:
--
+- Iteration 2: largest value implementation
 
 ---
 
