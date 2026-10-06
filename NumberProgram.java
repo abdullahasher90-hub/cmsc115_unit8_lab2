@@ -9,6 +9,10 @@ public class NumberProgram {
     }
 
     public static int findResult(int[] values) {
-        return 0;
+        int sum = 0;
+        for (int i = 0; i < values.length; i++) {
+            sum += values[i];
+        }
+        return sum;
     }
 }
